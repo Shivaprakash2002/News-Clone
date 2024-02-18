@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.btns{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.btn{
+   background-color: black;
+   color: white;
+   height: 50px;
+   width: 100px;
+   border: none;
+}
