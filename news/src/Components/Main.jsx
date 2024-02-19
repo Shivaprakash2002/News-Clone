@@ -2,7 +2,7 @@ import { useEffect,useState } from "react";
 import NewsItem from "./NewsItem";
 
 function Main(props){
-    const [newsItems,setNewsItems] = useState([]);
+    const [newsArticles,setNewsItems] = useState([]);
 
 useEffect(() => {
     const Newsdata = async () => {
@@ -15,9 +15,13 @@ useEffect(() => {
     Newsdata();
 },[props.newsCategory])
     return(
-        newsItems.map((news,index) => {
-           return <NewsItem key={index} news={news} />
-        })
+        newsArticles ? (
+            newsArticles.map((news, index) => {
+              return <NewsItem key={index} news={news} />;
+            })
+          ) : (
+            <div>Loading...</div>
+          )
     )
 }
 
