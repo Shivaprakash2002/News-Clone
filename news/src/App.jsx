@@ -4,7 +4,7 @@ import Navbar from './Components/Navbar'
 import Main from './Components/Main'
 
 function App() {
-  const [newsCategory,setNewsCategory] = useState("general")
+  const [newsCategory,setNewsCategory] = useState("")
 
   return (
     <>
@@ -14,4 +14,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
